@@ -1,0 +1,178 @@
+!!! 5
+%html
+  
+  %head
+    %title Digital Alley
+    = stylesheets
+    %meta{:charset => "utf-8"}
+    %script{:src => "http://html5shiv.googlecode.com/svn/trunk/html5.js"}
+  %body
+    = yield
+    
+    #wrapper
+      %header#header
+        .logo 
+          %img{:src => "images/logo.png", :alt =>"Digital Alley Logo"}
+        
+        %ul.nav
+          %li 
+            %a{:href => "#", :class => "scroll"}Home //
+          %li 
+            %a{:href => "#article2", :class => "scroll"}Our Work //
+          %li
+            %a{:href => "#article3", :class => "scroll"}Services //
+          %li 
+            %a{:href => "#article4", :class => "scroll"}Contact //
+
+        
+				
+       
+      %input{:type => "radio", :checked=> "checked", :name => "slider", :id => "slide1", :class => "radiob"}
+      %input{:type => "radio", :name => "slider", :id => "slide2", :class => "radiob"}
+      %input{:type => "radio", :name => "slider", :id => "slide3", :class => "radiob"}
+      %input{:type => "radio", :name => "slider", :id => "slide4", :class => "radiob"}
+     
+      #banner
+        #overflow
+          .inner
+            %article
+              .info
+                %img{:src => "images/slide-1.jpg", :alt => "web design amsterdam"}
+            %article
+              .info
+                %img{:src => "images/slide-2.jpg", :alt => "web design amsterdam"}
+            %article
+              .info
+                %img{:src => "images/slide-3.jpg", :alt => "web design amsterdam"}
+            %article
+              .info
+                %img{:src => "images/slide-4.jpg", :alt => "web design amsterdam"}
+
+        #controls
+          %label{:for => "slide1"}
+          %label{:for => "slide2"}
+          %label{:for => "slide3"}
+          %label{:for => "slide4"}
+
+        #active
+          %label{:for => "slide1"}
+          %label{:for => "slide2"}
+          %label{:for => "slide3"}
+          %label{:for => "slide4"}
+
+
+      #twocolumn
+        .text
+          
+          We build beautiful websites, that is our passion. Matching your requirements and transforming them into an online presence is what     we're trained to do. We're happy to discuss your ideas and figure out a strategy to reach your online goals over a coffee or lunch. Get in touch.
+          
+        .followus
+          %h1 follow us
+          .icons
+            .fb
+              %a{:href => "#"} 
+                %img{:src => "images/fb.png", :alt => "digital alley facebook", :border => "0"}
+            .twitter
+              %a{:href => "#"}
+                %img{:src => "images/twitter.png", :alt => "digital alley twitter", :border => "0"}
+            .gplus
+              %a{:href => "#"}  
+                %img{:src => "images/gplus.png", :alt => "digital alley google plus", :border => "0"}              
+   
+          
+        
+         
+              
+      #content
+        .left-content
+          %h2.first This is Digital Alley
+          We build beautiful websites, that is our passion. Matching your requirements and transforming that into an online presence is what     we're trained to do. We build beautiful websites, that is our passion. Matching your requirements and transforming that into an online presence is what we're trained to do.
+        .right-content
+          .near-right-content
+            %h2.second This Is Our Work
+            We build beautiful websites, that is our passion. Matching your requirements and transforming that into an online presence is what     we're trained to do. We build beautiful websites, that is our passion. Matching your requirements and transforming that into an online presence is what we're trained to do.
+          .far-right-content
+            %h2.third Like What You See?
+            We build beautiful websites, that is our passion. Matching your requirements and transforming that into an online presence is what     we're trained to do. We build beautiful websites, that is our passion. Matching your requirements and transforming that into an online presence is what we're trained to do.
+      
+      #ourwork
+        %article#article2
+          %h1 our work
+          .ourworktext
+            %p We build beautiful websites, that is our passion. Matching your requirements and transforming that into an online presence is what we're trained to do. We build beautiful websites, that is our passion. Matching your requirements and transforming that into an online presence is what we're trained to do.   
+          .left-content
+            %img{:src => "images/simple-bar-amsterdam.jpg", :alt => "Simple Bar Amsterdam"}
+            %img{:src => "images/bars-amsterdam.jpg", :alt => "Bars Amsterdam", :class => "bottom"}
+            
+          
+
+          .right-content
+            .near-right-content
+              %img{:src => "images/catandfiddle.jpg", :alt => "cat and fiddle"}
+              %img{:src => "images/newtown-festival.jpg", :alt => "Newtown Festival Sydney", :class => "bottom"}
+              
+              
+            
+
+            .far-right-content
+              %img{:src => "images/amsterdam-appartement.jpg", :alt => "Amsterdam Appartments"}
+              %img{:src => "images/wholesale.jpg", :alt => "web design Amsterdam", :class => "bottom"} 
+              
+            
+
+      #services
+        %article#article3
+          %h1 services
+          .servicestext
+            %p We build beautiful websites, that is our passion. Matching your requirements and transforming that into an online presence is what we're trained to do. We build beautiful websites, that is our passion. Matching your requirements and transforming that into an online presence is what we're trained to do.
+          .services-circles
+            .step
+              %strong.title
+                Vision
+              %p We assist you in visualising your next project and help you put those visualisations on paper.
+            .step
+              %strong.title
+                Ideas
+              %p By taking those visualisations, we turn them into ideas and present you with options.
+            .step
+              %strong.title
+                Create
+              %p Sit back and watch the magic happen as we turn your vision into a reality.
+            .step
+              %strong.title
+                Grow
+              %p It doesn't stop here. One of the most important steps is to grow and gain exposure. This is where we can help.
+             
+            
+             
+            
+               
+
+      #contact
+        %article#article4
+          %h1 contact
+          .left
+            %h2 info@digitalalley.nl
+            %h2 +31 6 25 17 24 38
+            %h2 Amsterdam
+            %h2 Holland Noord, The Netherlands
+
+          .right
+            %img{:src => "images/amsterdam-web-agency.jpg", :alt => "web design Amsterdam"}
+        
+            
+
+
+			
+
+				    
+              
+     
+
+      
+      %footer
+        %p &copy; digital alley 2012
+        %p.email +31 6 25 17 24 38 // info@digitalalley.nl
+  %script{:src => "http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"}
+  %script{:src => "js/jquery.scrollTo-min.js"}
+  %script{:src => "js/script.js"}
